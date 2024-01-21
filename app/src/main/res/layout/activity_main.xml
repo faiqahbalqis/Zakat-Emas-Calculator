@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="312dp"
+        android:layout_height="329dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dip"
+        app:srcCompat="@drawable/ezyzakat2" />
+
+    <TextView
+        android:id="@+id/textViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="32dip"
+        android:layout_marginRight="32dip"
+        android:gravity="center"
+        android:text="@string/mainText"
+        android:fontFamily="@font/inconsolata"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/calculatorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewMain"
+        android:layout_marginTop="20dp"
+        android:width="180dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/inconsolata"
+        android:onClick="calculatorBtnMain"
+        android:text="Get Started"
+        android:textSize="18sp" />
+
+</RelativeLayout>

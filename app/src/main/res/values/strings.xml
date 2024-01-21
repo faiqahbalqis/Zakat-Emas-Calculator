@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ezy zakat</string>
+    <string name="mainText">Have you paid your gold zakat? Calculate yours now!</string>
+    <string name="copyright">Copyright &#169; 2022 Faiqah Shahirah</string>
+    <string name="about_text">This is a simple zakat calculator which demontrate on how to calculate gold zakat based on weight and gold current value</string>
+    <string name="developer">Developers Details</string>
+    <string name="email1">2020477312@student.uitm.edu.my</string>
+    <string name="email2">2020846686@student.uitm.edu.my</string>
+    <string name="name1">Siti Shahirah binti Sabran</string>
+    <string name="name2">Nur Faiqah Balqis binti Mohamad</string>
+</resources>

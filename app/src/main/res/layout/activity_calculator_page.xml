@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_centerHorizontal="true"
+    tools:context=".CalculatorPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/goldWeightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:text="Gold Weight (g)" />
+
+
+        <EditText
+            android:id="@+id/goldWeightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/currentValueTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:text="Current Value of Gold per gram (RM)" />
+
+        <EditText
+            android:id="@+id/currentValueEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inconsolata"
+                android:textSize="18sp"
+                android:text="Type of Gold:" />
+
+            <RadioButton
+                android:id="@+id/keepRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inconsolata"
+                android:textSize="18sp"
+                android:text="Keep" />
+
+            <RadioButton
+                android:id="@+id/wearRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inconsolata"
+                android:textSize="18sp"
+                android:text="Wear" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q1TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:text="Total value of gold :" />
+
+        <TextView
+            android:id="@+id/q2TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:text="Total gold value that is zakat payable :" />
+
+        <TextView
+            android:id="@+id/q3TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:text="Uruf :" />
+
+        <TextView
+            android:id="@+id/q4TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:text="Total zakat :" />
+
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="16dp"
+            android:width="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_gradient"
+            android:fontFamily="@font/inconsolata"
+            android:onClick="calculateButtonClick"
+            android:text="Calculate"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="16dp"
+            android:width="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_gradient"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="18sp"
+            android:onClick="clearButtonClick"
+            android:text="Clear" />
+    </LinearLayout>
+</RelativeLayout>
